@@ -23,11 +23,24 @@
               <li class="nav-item">
                 <a class="nav-link" href="./lodges.html">Lodging</a>
               </li>
-              </li>
+              <li class="nav-item"> 
                 <a class="nav-link" href="./restaurants.html">Restaurants</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link active" href="#">Activities</a>
+              <li class="nav-item dropdown">
+                <a class="nav-link active" href="./activities.html" id="navbarDropdownMenuLink">
+                  Activities
+                </a>
+                <button class="btn btn-sm btn-secondary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                  <span class="visually-hidden">Toggle Dropdown</span>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" onclick="rerender('water-type')" href="#WaterActivities">Water Activities</a></li>
+                  <li><a class="dropdown-item" onclick="rerender('kid-type')" href="#KidsActivities">Kids' Activities</a></li>
+                  <li><a class="dropdown-item" onclick="rerender('nature-type')" href="#NatureActivities">Nature Sight Touring</a></li>
+                  <li><a class="dropdown-item" onclick="rerender('physical-type')" href="#PhysicalActivities">Physical/Sport's Activities</a></li>
+                  <li><a class="dropdown-item" onclick="rerender('romantic-type')" href="#RomanticActivities">Romantic Activities</a></li>
+                  <li><a class="dropdown-item" onclick="rerender('entertainment-type')" href="#EntertainmentActivities">Entertainment Activities</a></li>
+                </ul>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="./transportation.html">Transportation</a>
@@ -38,6 +51,7 @@
               <li class="nav-item">
                 <a class="nav-link" href="./faqs.html">FAQs</a>
               </li>
+            </ul>
           </div>
         </div>
       </nav>
@@ -135,7 +149,7 @@
             </div>
           </header>
           <main class="shadow-sm p-3 mb-5 bg-body rounded">
-            <h1 class="display-6 text-secondary">Welcome to Taniti</h1>
+            <h1 class="rerender-6 text-secondary">Welcome to Taniti</h1>
             <h2 class="bold">A captivating beautiful island in the pacific ocean</h2>
             <br>
             <p class="fs-6 fw-lighter" style="max-width: 650px; text-align: start; margin-inline: auto;">
@@ -167,8 +181,8 @@
               <span style="font-size: 25px;">Explore more that Taniti offers:</span>
             </p>
             <br>
-            <div class="card-container">
-              <div class="card">
+            <div id="activities-cards" class="card-container">
+              <div class="card water-type physical-type">
                 <img class="card-img-top" src="./img/R (7).jfif" alt="Card image cap">
                 <div class="card-body">
                   <h5 class="card-title">Taniti's Water Sports</h5>
@@ -176,7 +190,7 @@
                   <a href="#" class="btn btn-primary" onclick="alert('[Simulation] Redirecting to another website...')">Book Now</a>
                 </div>
               </div>
-              <div class="card">
+              <div class="card water-type">
                 <img class="card-img-top" src="./img/P2_05_TAHAA_01810.jpg" alt="Card image cap">
                 <div class="card-body">
                   <h5 class="card-title ">Taniti's Sail Catamarans</h5>
@@ -184,7 +198,7 @@
                   <a href="#" class="btn btn-primary" onclick="alert('[Simulation] Redirecting to another website...')">Book Now</a>
                 </div>
               </div>
-              <div class="card">
+              <div class="card water-type physical-type">
                 <img class="card-img-top" src="./img/R (6).jfif" alt="Card image cap">
                 <div class="card-body">
                   <h5 class="card-title ">Taniti's Water Activities</h5>
@@ -192,7 +206,7 @@
                   <a href="#" class="btn btn-primary" onclick="alert('[Simulation] Redirecting to another website...')">Book Now</a>
                 </div>
               </div>
-              <div class="card">
+              <div class="card kid-type">
                 <img class="card-img-top" src="./img/Tahiti-with-Kids-FTR.jpg" alt="Card image cap">
                 <div class="card-body">
                   <h5 class="card-title ">Taniti's Kids Playgrounds</h5>
@@ -200,7 +214,7 @@
                   <a href="#" class="btn btn-primary" onclick="alert('[Simulation] Redirecting to another website...')">Book Now</a>
                 </div>
               </div>
-              <div class="card">
+              <div class="card physical-type">
                 <img class="card-img-top" src="./img/Moorea-Green-Pearl-Golf-Club_NEXT-GOLF-1.jpg" alt="Card image cap">
                 <div class="card-body">
                   <h5 class="card-title ">Taniti's Golf Courses</h5>
@@ -208,7 +222,7 @@
                   <a href="#" class="btn btn-primary" onclick="alert('[Simulation] Redirecting to another website...')">Book Now</a>
                 </div>
               </div>
-              <div class="card">
+              <div class="card nature-type">
                 <img class="card-img-top" src="./img/opunohu_bay_on_the_tropical_island_of_moorea_tahiti_1.jpg" alt="Card image cap">
                 <div class="card-body">
                   <h5 class="card-title ">Taniti's Volcano Tour</h5>
@@ -216,7 +230,7 @@
                   <a href="#" class="btn btn-primary" onclick="alert('[Simulation] Redirecting to another website...')">Book Now</a>
                 </div>
               </div>
-              <div class="card">
+              <div class="card nature-type">
                 <img class="card-img-top" src="./img/vegetation04_-_credit_irt_-_serge_gelabert_dts_12_2015-640x320.jpg" alt="Card image cap">
                 <div class="card-body">
                   <h5 class="card-title ">Taniti's Rain Forest Tour</h5>
@@ -224,7 +238,7 @@
                   <a href="#" class="btn btn-primary" onclick="alert('[Simulation] Redirecting to another website...')">Book Now</a>
                 </div>
               </div>
-              <div class="card">
+              <div class="card romantic-type">
                 <img class="card-img-top" src="./img/mc-fllsb-dining-38519-wide-hor.webp" alt="Card image cap">
                 <div class="card-body">
                   <h5 class="card-title">Taniti's Romantic Beach Dinner</h5>
@@ -232,7 +246,7 @@
                     <a href="#" class="btn btn-primary" onclick="alert('[Simulation] Redirecting to another website...')">Book Now</a>
                 </div>
               </div>
-              <div class="card">
+              <div class="card romantic-type">
                 <img class="card-img-top" src="./img/OIP (9).jfif" alt="Card image cap">
                 <div class="card-body">
                   <h5 class="card-title ">Taniti's Native Ceremonial Wedding</h5>
@@ -240,7 +254,7 @@
                     <a href="#" class="btn btn-primary" onclick="alert('[Simulation] Redirecting to another website...')">Book Now</a>
                 </div>
               </div>
-              <div class="card">
+              <div class="card physical romantic-type">
                 <img class="card-img-top" src="./img/heb-ppt-radisson-01.jpg" alt="Card image cap">
                 <div class="card-body">
                   <h5 class="card-title ">Taniti's Relaxing Message</h5>
@@ -248,7 +262,7 @@
                   <a href="#" class="btn btn-primary" onclick="alert('[Simulation] Redirecting to another website...')">Book Now</a>
                 </div>
               </div>
-              <div class="card">
+              <div class="card history-type kid-type">
                 <img class="card-img-top" src="./img/IMG_8614.jpg" alt="Card image cap">
                 <div class="card-body">
                   <h5 class="card-title ">Taniti's Local Museum Tour</h5>
@@ -256,7 +270,7 @@
                   <a href="#" class="btn btn-primary" onclick="alert('[Simulation] Redirecting to another website...')">Book Now</a>
                 </div>
               </div>
-              <div class="card">
+              <div class="card nature-type">
                 <img class="card-img-top" src="./img/Bora-Bora-Helicopter5-2000x1200_69306.jpg" alt="Card image cap">
                 <div class="card-body">
                   <h5 class="card-title ">Taniti's Helicopter Tour</h5>
@@ -264,7 +278,7 @@
                   <a href="#" class="btn btn-primary" onclick="alert('[Simulation] Redirecting to another website...')">Book Now</a>
                 </div>
               </div>
-              <div class="card">
+              <div class="card entertainment-type history-type">
                 <img class="card-img-top" src="./img/4b3b1885bb6477610d4c659d40daf282.jpg" alt="Card image cap">
                 <div class="card-body">
                   <h5 class="card-title ">Taniti's Native Ceremonial Dances</h5>
@@ -272,7 +286,7 @@
                   <a href="#" class="btn btn-primary" onclick="alert('[Simulation] Redirecting to another website...')">Book Now</a>
                 </div>
               </div>
-              <div class="card">
+              <div class="card entertainment-type kid-type">
                 <img class="card-img-top" src="./img/OIP.jpg" alt="Card image cap">
                 <div class="card-body">
                   <h5 class="card-title ">Taniti's Bowling & Arcade</h5>
@@ -280,7 +294,7 @@
                   <a href="#" class="btn btn-primary" onclick="alert('[Simulation] Redirecting to another website...')">Book Now</a>
                 </div>
               </div>
-              <div class="card">
+              <div class="card entertainment-type kid-type">
                 <img class="card-img-top" src="./img/R (11).jfif" alt="Card image cap">
                 <div class="card-body">
                   <h5 class="card-title ">Taniti's Movie Theater</h5>
@@ -340,7 +354,6 @@
                 <span class="visually-hidden">Next</span>
               </button>
             </div>
-          </div>
             <div class="cbanner">
               <img src="./img/Moorea-Green-Pearl-Golf-Club_NEXT-GOLF-1.jpg" alt="...">
               <p class="fs-6 fw-lighter">
@@ -356,12 +369,12 @@
                 </span>
               </p>
             </div>
-            <div id="tinatiSightcarouselIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div id="tinatiSightcarouselIndicators-main" class="carousel slide" data-bs-ride="carousel">
               <div class="carousel-indicators">
-                <button type="button" data-bs-target="#tinatiSightcarouselIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#tinatiSightcarouselIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#tinatiSightcarouselIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                <button type="button" data-bs-target="#tinatiSightcarouselIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#tinatiSightcarouselIndicators-main" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#tinatiSightcarouselIndicators-main" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#tinatiSightcarouselIndicators-main" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#tinatiSightcarouselIndicators-main" data-bs-slide-to="3" aria-label="Slide 4"></button>
               </div>
               <div class="carousel-inner">
                 <div class="carousel-item">
@@ -377,16 +390,17 @@
                   <img src="./img/heb-ppt-radisson-01.jpg" class="d-block w-100" alt="...">
                 </div>
               </div>
-              <button class="carousel-control-prev" type="button" data-bs-target="#tinatiSightcarouselIndicators" data-bs-slide="prev">
+              <button class="carousel-control-prev" type="button" data-bs-target="#tinatiSightcarouselIndicators-main" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
               </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#tinatiSightcarouselIndicators" data-bs-slide="next">
+              <button class="carousel-control-next" type="button" data-bs-target="#tinatiSightcarouselIndicators-main" data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
               </button>
             </div>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
         <script src="./js/main.js"></script>
+      </main>
     </body>
 </html>

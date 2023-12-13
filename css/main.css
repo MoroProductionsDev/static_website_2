@@ -29,6 +29,17 @@ nav .navbar-toggler span {
     padding: 0.6rem 0;
 }
 
+nav button.dropdown-toggle, nav button.dropdown-toggle:focus {
+    background-color: #212529;
+    border: 0;
+    max-height: 40px;
+}
+
+nav .nav-item {
+    display: flex;
+
+}
+
 nav .dropdown-item {
     font-size: var(--global-font-size);
 }
@@ -588,12 +599,12 @@ main .questions-title {
     }
 
     main .cbanner {
-        max-height: 275x;
+        max-height: 275px;
         max-width: 1300px;
     }
 
     main .cbanner img {
-        min-height: 255x;
+        min-height: 255px;
         min-width: 415px;
         object-fit: fill;
     }
