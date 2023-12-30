@@ -196,6 +196,7 @@ main .accordion-item {
     min-width: 400px;
     width: 80vw;
     max-width: 750px;
+    margin-inline: auto;
 }
 
 main .accordion-button {
